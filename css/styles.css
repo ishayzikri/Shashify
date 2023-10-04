@@ -137,3 +137,23 @@ a{
         padding-left: 0;
     }
 }
+
+/*icons*/
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon--primary{
+    fill: var(--color-primmary);
+}
+.icon-container{
+    background-color: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*buttons*/
