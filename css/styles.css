@@ -199,10 +199,10 @@ a {
   white-space: nowrap;
 }
 
-.btn .icon{
+.btn .icon {
   width: 2rem;
   height: 2rem;
-  margin-right: 1rem ;
+  margin-right: 1rem;
   vertical-align: middle;
 }
 
@@ -275,9 +275,8 @@ a {
 
 .input-grups {
   border: 1px solid var(--color-border);
-  border-radius: var(--border-radius );
+  border-radius: var(--border-radius);
   display: flex;
-  
 }
 
 .input-grups .input {
@@ -320,8 +319,8 @@ a {
   color: #fff;
 }
 
-.card--primary .badge--primary{
-background-color: #126de4;
+.card--primary .badge--primary {
+  background-color: #126de4;
 }
 
 .card--secondary .badge--secondary {
@@ -330,8 +329,8 @@ background-color: #126de4;
 
 /*plans*/
 
-.plan{
-  transition: transform .2s ease-out;
+.plan {
+  transition: transform 0.2s ease-out;
 }
 
 .plan__name {
@@ -363,7 +362,7 @@ background-color: #126de4;
   margin-bottom: 2rem;
 }
 
-.plan--popular{
+.plan--popular {
   transform: scale(1.1);
 }
 
@@ -380,11 +379,11 @@ background-color: #126de4;
   right: 5%;
 }
 
-.plan:hover{
+.plan:hover {
   transform: scale(1.05);
 }
 
-.plan--popular:hover{
+.plan--popular:hover {
   transform: scale(1.15);
 }
 
@@ -590,7 +589,7 @@ background-color: #126de4;
 /*Blocks */
 
 .container {
-  max-width: 1140px;
+  max-width: 114rem;
   margin: 0 auto;
 }
 .block {
@@ -716,45 +715,68 @@ background-color: #126de4;
   }
 }
 
-
 /* domain block*/
 
-.block-domain .input-grups{
-box-shadow: 0 0 30px 20px #e6ebee;
-border:0;
-margin: 4rem auto;
-max-width: 670px;
+.block-domain .input-grups {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
 }
 
-.block-domain__prices{
+.block-domain__prices {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 6rem);
-font-size: 2rem;
-font-weight: 600;
-justify-items: center;
-max-width: 700px;
-margin: 0 auto;
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 800px) {
-.block-domain__prices{
-
-grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
 }
 
 /* plan-blocks*/
-.block-plans .grid{
+.block-plans .grid {
   gap: 8rem 4rem;
 }
 
-.block-plans .card{
+.block-plans .card {
   max-width: 500px;
   margin: 0 auto;
 }
 
-/*   */
+/* features  */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+  width: 100%;
+  
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
 
 
 
+@media screen and (min-width: 768px) {
+ 
+.feature:nth-last-of-type(even) .feature__content{
+  order:2;
+}
+
+}
