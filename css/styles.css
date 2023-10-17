@@ -618,9 +618,7 @@ a {
   color: #7b858b;
 }
 
-.block--dark h1,
-h2,
-h3 {
+.block--dark .block__heading {
   color: #fff;
 }
 
