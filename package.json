@@ -10,6 +10,9 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   },
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "abab": "^2.0.6",
     "acorn": "^7.4.1",
